@@ -7,7 +7,7 @@ import { faCheck, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { CHECK_PASSWORD_TIME_DELAY, VALIDATE_PASSWORD } from 'globalConstants/auth'
 import clsx from 'clsx'
-import { checkError } from 'helpers/passwordStrong'
+import { checkError } from 'pattern/passwordStrong'
 import { debounce as _debounce } from 'lodash'
 import s from './UpdatePasswordPage.module.scss'
 
@@ -57,7 +57,7 @@ const UpdatePassword = () => {
 
           <div className={s.progressPassword}>
             {/* @ts-ignore */}
-            <p>{percentPasswordStrong === 100 ? t('common:form.good') : t('common:form.weak')}</p>
+            <p>{percentPasswordStrong === 100 ? t('common:form.good') : t('common:form.week')}</p>
             <Progress
               type="circle"
               percent={percentPasswordStrong}

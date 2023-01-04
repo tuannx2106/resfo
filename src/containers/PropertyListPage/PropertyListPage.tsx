@@ -24,21 +24,8 @@ for (let i = 0; i < 20; i++) {
 }
 
 const PropertyListPage = () => {
-  const { data, isFetching, error } = useGetPropertiesQuery({
-    $$JSON: JSON.stringify({
-      pagination: {
-        skip: 0,
-        limit: 100,
-      },
-      query: { posted_date: [0, 2558755098316] },
-      sort: {
-        name: 'price',
-        order: 'desc',
-      },
-      filter: {},
-    }),
-  })
-  console.log(isFetching, data, error)
+  const { data, isFetching } = useGetPropertiesQuery({ q: 'batman' })
+  console.log(isFetching, data)
   const [isOnMapMode, setIsOnMapMode] = useState<boolean>(false)
 
   return (

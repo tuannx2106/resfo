@@ -116,7 +116,7 @@ const PropertyItem = ({ item, extraInfo = false, className }: PropertyItemProps)
               <h4 className={s.propertyPrice}>$60,000</h4>
               <p className={s.propertyBasicInfo}>1 bd1 ba643 sqft- Condo for sale</p>
               <address>7444 Saint Charles Ave APT 303, New Orleans, LA 70118</address>
-              <p className={s.propertyOwner}>Veela</p>
+              <p className={s.propertyOwner}>Zillow</p>
             </div>
           </a>
         </Link>

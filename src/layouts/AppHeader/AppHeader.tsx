@@ -12,7 +12,7 @@ import { SelectOption } from 'globalTypes/form'
 import { useAppDispatch, useAppSelector } from 'store'
 import { uniqueId as _uniqueId } from 'lodash'
 import { signOut, useSession } from 'next-auth/client'
-import { clearSession, DefaultSession, updateIsVisibleAuthModal, updateSession } from 'store/slice/authSlice'
+import { clearSession, updateIsVisibleAuthModal, updateSession } from 'globalSlices/authSlice'
 import AuthForm from 'components/AuthForm'
 import { PRIVATE_ROUTE } from 'globalConstants/privateRoute'
 import s from './AppHeader.module.scss'
@@ -92,9 +92,7 @@ const AppHeader = () => {
 
   // TODO: handle get session
   useEffect(() => {
-    if (session) {
-      dispatch(updateSession(session as DefaultSession))
-    }
+    if (session) dispatch(updateSession(session))
   }, [session])
 
   // handle set default locale
@@ -144,7 +142,7 @@ const AppHeader = () => {
     await signOut({ redirect: false })
     dispatch(updateIsVisibleAuthModal(false))
     dispatch(clearSession())
-    if (PRIVATE_ROUTE.includes(router.pathname)) router.replace('/')
+    if (PRIVATE_ROUTE.includes(router.pathname)) router.push('/')
   }
 
   // Menu profile dropdown
@@ -223,8 +221,8 @@ const AppHeader = () => {
                     className={s.profileImage}
                     width={35}
                     height={35}
-                    src={authSession?.picture || undefined}
-                    alt={`img ${authSession?.name}`}
+                    src={authSession?.user?.image || undefined}
+                    alt={`img ${authSession?.user?.name}`}
                   />
                 </div>
               </Dropdown>

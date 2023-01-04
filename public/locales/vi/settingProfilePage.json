@@ -10,7 +10,7 @@
     "title": "Personal Info",
     "editName": {
       "title": "Name",
-      "desc": "Your first and last given names. Updates are reflected across all Veela experiences.",
+      "desc": "Your first and last given names. Updates are reflected across all Zillow experiences.",
       "modalTitle": "Edit name",
       "firstName": "First name",
       "lastName": "Last name"
@@ -38,7 +38,7 @@
       "title": "Email",
       "desc": "The email address associated with your account.",
       "modalTitle": "Edit email",
-      "currentEmail": "Your current email is",
+      "currentEmail": "Your current email is {{email}}",
       "newEmail": "New email",
       "confirmEmail": "Confirm new email"
     },
@@ -66,14 +66,7 @@
     },
     "ggSignIn": {
       "title": "Google sign in",
-      "desc": "You've linked your Google account to Veela and are using it to sign in. You are signed in as {{email}}.",
-      "unLink": "Unlink",
-      "modalTitle": "Unlink account",
-      "formDesc": "Are you sure you want to unlink this account?"
-    },
-    "fbSignIn": {
-      "title": "Facebook sign in",
-      "desc": "You've linked your Facebook account to Veela and are using it to sign in.",
+      "desc": "You've linked your Google account to Zillow and are using it to sign in. You are signed in as {{email}}.",
       "unLink": "Unlink",
       "modalTitle": "Unlink account",
       "formDesc": "Are you sure you want to unlink this account?"

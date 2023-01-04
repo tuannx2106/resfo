@@ -32,8 +32,8 @@ const SavedSearchEmptyState = () => {
 
         <p>
           {/* @ts-ignore */}
-          <b>{t('empty.takeVeelaWithYou')}</b> {t('empty.getAppSubscription')} {/* @ts-ignore */}
-          <Link href="/">{t('empty.getTheVeelaApp')}</Link>
+          <b>{t('empty.takeZillowWithYou')}</b> {t('empty.getAppSubscription')} {/* @ts-ignore */}
+          <Link href="/">{t('empty.getTheZillowApp')}</Link>
         </p>
       </div>
     </div>

@@ -6,7 +6,7 @@ const minUpperCase = (value: string) => /^(?=.*?[A-Z]).+$/.test(value)
 
 const minNumber = (value: string) => /^(?=.*?[0-9]).+$/.test(value)
 
-const minSpecial = (value: string) => !/^(?=.*?[~`!@#$%^&*()\-_+={}[]|;:"<>,.\/\?]).+$/.test(value)
+const minSpecial = (value: string) => /^(?=.*?[~`!@#$%^&*()\-_+={}[]|;:"<>,.\/\?]).+$/.test(value)
 
 export const checkError = (value: string) => ({
   min: minChar(value, 8),

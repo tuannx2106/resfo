@@ -4,10 +4,10 @@ const { i18n } = require('./next-i18next.config')
 
 const variables = {
   development: {
-    apiEndpoint: 'https://api.staging.veela.io/api/v1',
+    apiEndpoint: 'https://api.tvmaze.com',
   },
   production: {
-    apiEndpoint: 'https://api.staging.veela.io/api/v1',
+    apiEndpoint: 'https://api.tvmaze.com',
   },
 }[process.env.NODE_ENV || 'development']
 

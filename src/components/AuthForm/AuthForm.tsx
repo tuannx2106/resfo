@@ -13,7 +13,7 @@ const AuthForm = () => {
 
   return (
     <div className={s.auth}>
-      <h2 className={s.authTitle}>{t('authForm.welcomeToVeela')}</h2>
+      <h2 className={s.authTitle}>{t('authForm.welcomeToZillow')}</h2>
       <Tabs defaultActiveKey="1">
         <Tabs.TabPane tab={t('authForm.signIn')} key="1">
           <SignInForm />

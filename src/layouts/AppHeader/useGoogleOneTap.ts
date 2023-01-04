@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { updateSession } from 'store/slice/authSlice'
+import { updateSession } from 'globalSlices/authSlice'
 import { useEffect } from 'react'
 import { useAppDispatch, useAppSelector } from 'store'
 import getConfig from 'next/config'

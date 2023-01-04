@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { homePageSlice } from 'containers/HomePage/slice'
-import { authSlice } from 'store/slice/authSlice'
+import { authSlice } from 'globalSlices/authSlice'
 import { appAPIMiddleware, appAPIReducer, appAPIReducerPath } from './appAPIs'
 
 export const store = configureStore({

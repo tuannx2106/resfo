@@ -38,13 +38,9 @@
   :global {
     .ant-form-vertical.setting-form-inline {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       flex-wrap: wrap;
       gap: var(--space-4);
-
-      @include mediaquery-tb() {
-        flex-direction: row;
-      }
 
       .ant-form-item {
         margin-bottom: 0;

@@ -1,7 +1,19 @@
 @import 'styles';
 
 .searchWrapper {
-  position: relative;
+  @extend %flex-center;
+  background-image: url('/img/homepage/img-search-background.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: calc(-1 * var(--header-height-mini));
+  height: 440px;
+  padding: 0 16px;
+
+  @include mediaquery-pc() {
+    height: 584px;
+    margin-top: calc(-1 * var(--header-height));
+  }
 
   :global {
     .ant-space.ant-space-vertical {
@@ -60,33 +72,6 @@
         }
       }
     }
-  }
-}
-
-.imgBackground {
-  margin-top: calc(-1 * var(--header-height-mini));
-
-  @include mediaquery-pc() {
-    margin-top: calc(-1 * var(--header-height));
-  }
-
-  img {
-    object-fit: cover;
-    height: 440px;
-
-    @include mediaquery-pc() {
-      height: 584px;
-    }
-  }
-}
-
-.locationSearchWrapper {
-  @extend %pos-centered;
-  width: 100%;
-  padding: 0 16px;
-
-  @include mediaquery-pc() {
-    padding: 0;
   }
 }
 

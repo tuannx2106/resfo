@@ -6,39 +6,19 @@ import { Form, Button, Divider } from 'antd'
 import { useTranslation } from 'react-i18next'
 import Input from 'components/Input'
 import { useAppDispatch, useAppSelector } from 'store'
-import { updateIsVisibleAuthModal } from 'store/slice/authSlice'
-import { signIn } from 'next-auth/client'
-import { useRouter } from 'next/router'
-import ErrorConstants from 'globalConstants/error'
+import { updateIsVisibleAuthModal } from 'globalSlices/authSlice'
 import s from '../../AuthForm.module.scss'
 import SocialForm from '../SocialForm'
 import ForgotPassModal from '../ForgotPassModal'
 
 const SignInForm = () => {
   const { t } = useTranslation()
-  const router = useRouter()
   const dispatch = useAppDispatch()
   const [isOpenForgotPassModal, setIsOpenForgotPassModal] = useState<boolean>(false)
   const authSession = useAppSelector(({ authSlice }) => authSlice.session)
-  const [isCorrectAccount, setIsCorrectAccount] = useState<boolean>(false)
-  const [form] = Form.useForm()
-  const [isLoading, setIsLoading] = useState<boolean>(false)
 
-  const submit = async (e: FormEventHandler) => {
-    setIsLoading(true)
-    const res = await signIn('credentials', {
-      ...e,
-      redirect: false,
-    })
-
-    if (res?.ok) {
-      if (router.pathname === '/auth/sign-in') router.replace('/')
-    } else if (res?.error === ErrorConstants.CREDENTIALS_SIGN_IN) {
-      setIsCorrectAccount(true)
-      form.validateFields()
-    }
-
-    setIsLoading(false)
+  const submit = (e: FormEventHandler) => {
+    console.log(e)
   }
 
   const openForgotPassModal = () => {
@@ -51,7 +31,6 @@ const SignInForm = () => {
       <Form
         name="basic"
         layout="vertical"
-        form={form}
         labelCol={{ span: 24 }}
         wrapperCol={{ span: 24 }}
         initialValues={{ remember: true }}
@@ -74,14 +53,9 @@ const SignInForm = () => {
               required: true,
               message: t('form.errorRequired', { name: 'Email' }),
             },
-            {
-              validator() {
-                return isCorrectAccount ? Promise.reject(new Error(t('form.accountIncorrect'))) : Promise.resolve()
-              },
-            },
           ]}
         >
-          <Input onChange={() => setIsCorrectAccount(false)} />
+          <Input />
         </Form.Item>
 
         {/* Password */}
@@ -94,14 +68,9 @@ const SignInForm = () => {
               required: true,
               message: t('form.errorRequired', { name: 'Password' }),
             },
-            {
-              validator() {
-                return isCorrectAccount ? Promise.reject(new Error(t('form.accountIncorrect'))) : Promise.resolve()
-              },
-            },
           ]}
         >
-          <Input onChange={() => setIsCorrectAccount(false)} type="password" />
+          <Input type="password" />
         </Form.Item>
 
         {/* Btn signIn */}
@@ -111,7 +80,7 @@ const SignInForm = () => {
             span: 24,
           }}
         >
-          <Button loading={isLoading} type="primary" htmlType="submit">
+          <Button type="primary" htmlType="submit">
             {t('authForm.signIn')}
           </Button>
         </Form.Item>

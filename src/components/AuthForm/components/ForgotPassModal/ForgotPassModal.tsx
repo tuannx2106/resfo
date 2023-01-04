@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 import { ForgotPasswordFormType } from 'globalTypes/auth'
 import Input from 'components/Input'
 import { useAppDispatch } from 'store'
-import { updateIsVisibleAuthModal } from 'store/slice/authSlice'
+import { updateIsVisibleAuthModal } from 'globalSlices/authSlice'
 import clsx from 'clsx'
 import s from '../../AuthForm.module.scss'
 

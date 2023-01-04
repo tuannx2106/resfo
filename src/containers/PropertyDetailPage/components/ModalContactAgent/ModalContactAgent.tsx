@@ -33,7 +33,7 @@ const ModalContactAgent = ({ ...rest }: ModalProps) => {
       {...rest}
     >
       <Form<FormValues> layout="vertical">
-        <p className={s.modalHead}>Connect with a local buyer’s agent who advertises with Veela.</p>
+        <p className={s.modalHead}>Connect with a local buyer’s agent who advertises with Zillow.</p>
 
         <Form.Item required={false} name="name" label={t('contactAgentModal.form.name')} rules={[requiredRule]}>
           <Input />

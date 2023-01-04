@@ -26,13 +26,10 @@ const ServiceItem = ({ item }: ServiceItemProps) => {
       </div>
 
       <div className={s.serviceItemContent}>
-        <div className={s.test}>
-          {/* @ts-ignore */}
-          <p className={s.serviceItemTitle}>{t(`serviceSection.${title}`)}</p>
-
-          {/* @ts-ignore */}
-          <p className={s.serviceItemSubTitle}>{t(`serviceSection.${subTitle}`)}</p>
-        </div>
+        {/* @ts-ignore */}
+        <p className={s.serviceItemTitle}>{t(`serviceSection.${title}`)}</p>
+        {/* @ts-ignore */}
+        <p className={s.serviceItemSubTitle}>{t(`serviceSection.${subTitle}`)}</p>
 
         <div className={s.serviceButton}>
           {/* @ts-ignore */}

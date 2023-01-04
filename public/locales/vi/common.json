@@ -19,7 +19,7 @@
         "recentHomeSale": "Recent home sale",
         "allHome": "All home",
         "bundleBuyingSelling": "Bundle buying & selling",
-        "buyAndSellWithVeela": "Buy and sell with Veela 360",
+        "buyAndSellWithZillow": "Buy and sell with Zillow 360",
         "resource": "Resource",
         "buyerGuild": "Buyer Guild",
         "realEstateApp": "Real estate app",
@@ -42,7 +42,7 @@
         "homeValues": "Home values",
         "sellerGuild": "Seller guild",
         "sellingOptions": "Selling options",
-        "sellWithVeelaOffers": "Sell with Veela Offers",
+        "sellWithZillowOffers": "Sell with Zillow Offers",
         "findASellerAgent": "Find a seller's agent",
         "postForSaleByOwner": "Post For Sale by Owner",
         "shopMortgages": "Shop mortgages",
@@ -82,7 +82,7 @@
         "leases": "Leases",
         "payments": "Payments",
         "learnMore": "Learn more",
-        "zillowRentalManager": "Veela Rental Manager",
+        "zillowRentalManager": "Zillow Rental Manager",
         "priceMyRental": "Price My Rental",
         "resourceCenter": "Resource Center",
         "helpCenter": "Help Center"
@@ -105,7 +105,7 @@
     "accountSettings": "Account settings"
   },
   "authForm": {
-    "welcomeToVeela": "Welcome to Veela",
+    "welcomeToZillow": "Welcome to Zillow",
     "signIn": "Sign in",
     "newAccount": "New account",
     "industryProfessional": "I am a landlord or industry professional",
@@ -121,7 +121,7 @@
     "propertyManager": "Property Manager",
     "otherRealEstateProfessional": "Other Real Estate Professional",
     "continue": "Continue",
-    "acceptTerm": "By submitting, I accept Veelas",
+    "acceptTerm": "By submitting, I accept Zillows",
     "termsOfUse": "terms of use",
     "orConnectWith": "Or connect with",
     "continueWithFacebook": "Continue with Facebook",
@@ -140,7 +140,7 @@
     "password": "Password",
     "atLeastCharacters": "At least 8 characters",
     "atLeast1Number": "At least 1 number",
-    "atLeastSpecialCharacter": "Have no special character",
+    "atLeastSpecialCharacter": "At least 1 special character",
     "atLeastUppercase": "At least 1 uppercase letter",
     "atLeastLowercase": "At least 1 lower letter",
     "submit": "Submit",
@@ -150,11 +150,7 @@
     "cellPhone": "Cell phone",
     "send": "Send",
     "good": "Good",
-    "weak": "Weak",
-    "emailDuplicated": "This email is duplicated",
-    "accountIncorrect": "Email or password is incorrect",
-    "firstNameError": "First name is only characters",
-    "lastNameError": "Last name is only characters"
+    "week": "Week"
   },
   "locale": {
     "en": "Tiếng Anh",

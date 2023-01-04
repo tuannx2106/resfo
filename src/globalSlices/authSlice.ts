@@ -1,30 +1,6 @@
 /* eslint-disable no-param-reassign */
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-
-export type DefaultSession = {
-  name: string
-  firstName?: string
-  lastName?: string
-  email: string
-  picture: string
-  id?: string
-  phoneNumber?: string
-  address1?: string
-  address2?: string
-  city?: string
-  state?: string
-  zipCode?: string
-  countryCode?: string
-  role?: 'user' | 'property_owner'
-  status?: 'active' | 'deactivated' // TODO: enum
-  verified?: boolean
-  iat: number
-  exp: number
-  token?: string
-  accessToken?: string
-  sub?: string
-  type: 'credentials' | 'oauth'
-}
+import { DefaultSession } from 'next-auth'
 
 export interface AuthState {
   session: DefaultSession | undefined

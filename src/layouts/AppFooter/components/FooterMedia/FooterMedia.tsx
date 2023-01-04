@@ -46,7 +46,7 @@ const FooterMedia = () => {
             <img width={32} height={32} src="/img/icon/icon-twitter.svg" alt="twitter icon" />
           </Link>
         </li>
-        <li>© 2020-2021 Veela</li>
+        <li>© 2006-2021 Zillow</li>
         <li>
           <Link href="/">
             <img width={32} height={32} src="/img/icon/icon-house.svg" alt="house icon" />

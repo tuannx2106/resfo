@@ -17,7 +17,6 @@ import s from './PropertyDetailPage.module.scss'
 import NearbyCity from './components/NearbyCity'
 import NewListingSlider from './components/NewListingSlider'
 import PriceTrend from './components/PriceTrend'
-import PriceHistory from './components/PriceHistory'
 
 const PropertyDetailPage = () => {
   const { t } = useTranslation('propertyDetailPage')
@@ -89,8 +88,6 @@ const PropertyDetailPage = () => {
 
         <section className={s.section}>
           <h3 className={s.sectionHeadline}>Price History</h3>
-
-          <PriceHistory />
         </section>
 
         <section className={s.section}>
@@ -163,7 +160,7 @@ const PropertyDetailPage = () => {
             />
             <p className={s.companyDescription}>
               The data relating to real estate for sale or lease on this web site comes in part from OneKey™ MLS. Real
-              estate listings held by brokerage firms other than Veela, Inc are marked with the OneKey™ MLS logo or an
+              estate listings held by brokerage firms other than Zillow, Inc are marked with the OneKey™ MLS logo or an
               abbreviated logo and detailed information about them includes the name of the listing broker. IDX
               information is provided exclusively for personal, non-commercial use, and may not be used for any purpose
               other than to identify prospective properties consumers may be interested in purchasing. Information is

@@ -7,7 +7,6 @@ import { store } from 'store'
 import { Provider } from 'react-redux'
 import { debounce as _debounce } from 'lodash'
 import ChatBox from 'components/ChatBox'
-import Head from 'next/head'
 import './globals.scss'
 import 'swiper/swiper.min.css'
 import 'swiper/components/pagination/pagination.min.css'
@@ -36,20 +35,14 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   }, [])
 
   return (
-    <>
-      <Head>
-        <title>Veela</title>
-      </Head>
-
-      <Provider store={store}>
-        {getLayout(
-          <div>
-            <Component {...pageProps} />
-            <ChatBox />
-          </div>,
-        )}
-      </Provider>
-    </>
+    <Provider store={store}>
+      {getLayout(
+        <div>
+          <Component {...pageProps} />
+          <ChatBox />
+        </div>,
+      )}
+    </Provider>
   )
 }
 

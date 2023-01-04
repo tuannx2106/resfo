@@ -72,7 +72,7 @@ const Chat = () => {
         ...prev,
         {
           message: '',
-          sender: authSession?.name || 'User',
+          sender: authSession?.user?.name || 'User',
           direction: 'outgoing',
           position: 'single',
           images: imgList,
@@ -89,7 +89,7 @@ const Chat = () => {
       ...prev,
       {
         message: preSanitizeCommentMessage(val),
-        sender: authSession?.name || 'User',
+        sender: authSession?.user?.name || 'User',
         direction: 'outgoing',
         position: 'single',
         id: _uniqueId('__message'),

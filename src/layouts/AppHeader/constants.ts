@@ -52,7 +52,7 @@ export const NAV_LEFT: Nav[] = [
         title: 'bundleBuyingSelling',
         menu: [
           {
-            label: 'buyAndSellWithVeela',
+            label: 'buyAndSellWithZillow',
             url: '/',
           },
         ],
@@ -174,7 +174,7 @@ export const NAV_LEFT: Nav[] = [
         title: 'bundleBuyingSelling',
         menu: [
           {
-            label: 'buyAndSellWithVeela',
+            label: 'buyAndSellWithZillow',
             url: '/',
           },
         ],
@@ -183,7 +183,7 @@ export const NAV_LEFT: Nav[] = [
         title: 'sellingOptions',
         menu: [
           {
-            label: 'sellWithVeelaOffers',
+            label: 'sellWithZillowOffers',
             url: '/',
           },
           {

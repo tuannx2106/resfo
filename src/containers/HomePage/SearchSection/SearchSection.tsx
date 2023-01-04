@@ -41,11 +41,7 @@ const SearchSection = () => {
         [s.active]: isVisibleLocationSearch,
       })}
     >
-      <div className={s.imgBackground}>
-        <Image width="2251" height="584" src="/img/homepage/img-search-background.webp" alt="Picture of the author" />
-      </div>
-
-      <Space direction="vertical" size={32} className={s.locationSearchWrapper}>
+      <Space direction="vertical" size={32}>
         <h2 className={s.searchTitle}>Change starts here</h2>
 
         <div className={s.search}>
