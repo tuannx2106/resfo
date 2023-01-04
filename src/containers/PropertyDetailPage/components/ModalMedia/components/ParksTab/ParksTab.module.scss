@@ -1,0 +1,150 @@
+@import 'styles';
+
+.root {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &.isCollapse {
+    .sidebarCard {
+      top: auto;
+    }
+
+    .schoolList {
+      display: none;
+    }
+  }
+}
+
+.mapSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+.sidebarCard {
+  max-height: 60%;
+  background-color: var(--cl-white);
+  padding: var(--space-2);
+  border-radius: 8px;
+  border: 1px solid var(--cl-gray-bd-1);
+  display: flex;
+  flex-direction: column;
+
+  @include mediaquery-tb-base() {
+    position: absolute;
+    top: var(--space-2);
+    bottom: var(--space-4);
+    right: var(--space-2);
+    width: 332px;
+    max-height: 100%;
+  }
+
+  :global {
+    .ant-select .ant-select-selector {
+      border-color: var(--cl-blue-5);
+      border-radius: var(--rounded);
+    }
+
+    .ant-select-selection-item,
+    .ant-select-arrow {
+      color: var(--cl-blue-1);
+    }
+  }
+
+  .cardTab {
+    :global {
+      .ant-tabs-nav {
+        padding: 0 var(--space-1);
+      }
+
+      .ant-tabs-tab {
+        margin: 0 var(--space-3) 0 0;
+
+        &.ant-tabs-tab-active .ant-tabs-tab-btn {
+          color: var(--cl-green-1);
+        }
+      }
+
+      .ant-tabs-ink-bar {
+        background-color: var(--cl-green-1);
+      }
+    }
+  }
+}
+
+.btnCollapse {
+  cursor: pointer;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+  }
+}
+
+.cardSelect {
+  width: 154px;
+  margin-top: var(--space-2);
+}
+
+.cardTab {
+  width: 100%;
+  margin-top: var(--space-2);
+}
+
+.note {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--cl-gray-6);
+}
+
+.parkList {
+  flex: 1;
+  overflow: scroll;
+}
+
+.parkItem {
+  display: flex;
+  padding: var(--space-2) 0;
+  gap: var(--space-4);
+
+  + .parkItem {
+    border-top: 1px solid var(--cl-gray-bd-1);
+  }
+}
+
+.parkIcon {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: var(--cl-green-2);
+  color: var(--cl-white);
+  border-radius: var(--rounded-circle);
+  font-size: var(--font-size-lg);
+}
+
+
+.parkName {
+  max-width: 240px;
+  font-weight: 700;
+  font-size: var(--font-size-md);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--cl-green-2);
+}
+
+.parkInfo {
+  font-size: var(--font-size-sm);
+  color: var(--cl-gray-8);
+}

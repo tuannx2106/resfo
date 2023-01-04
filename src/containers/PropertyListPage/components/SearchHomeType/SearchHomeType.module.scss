@@ -1,0 +1,21 @@
+.title {
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-semi-bold);
+}
+
+.subTitle {
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--cl-gray-bd-2);
+}
+
+.menus.isDropdown {
+  padding: var(--space-4);
+
+  .title {
+    margin-bottom: var(--space-1);
+    font-size: var(--font-size-sm);
+  }
+}

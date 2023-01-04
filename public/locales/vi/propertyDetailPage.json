@@ -1,0 +1,91 @@
+{
+  "goBack": "Go to search",
+  "save": "Save",
+  "share": "Share",
+  "description": "Description",
+  "openHouse": "Open House",
+  "homeDetailFor": "Home Detail for",
+  "localInformation": "Local Information",
+  "similarHome": "Similar Homes You May Like",
+  "nearbyHomes": "Nearby homes",
+  "neighborhood": "Neighborhood: {{place}}",
+  "nearbyCity": "Nearby cities",
+  "listingBy": "Listing provided by",
+  "agentPhone": "Agent Phone",
+  "listingLastModified": "Listing last modified",
+  "seeMore": "See more",
+  "seeLess": "See less",
+  "viewOnLargerMap": "View on larger map",
+  "tabName": {
+    "photo": "Photo",
+    "map": "Map",
+    "school": "School",
+    "parksOutdoors": "Parks & Outdoors"
+  },
+  "photoTab": {
+    "listingPhoto": "Listing Photos"
+  },
+  "schoolTab": {
+    "elementary": "Elementary",
+    "middle": "Middle",
+    "high": "High",
+    "allGrades": "All Grades",
+    "checkApplicableSchool": "Check with the applicable school district prior to making a decision based on these schools."
+  },
+  "parkTab": {
+    "parks": "Parks",
+    "dogParks": "Dog Parks",
+    "placeToStay": "Places to play, get moving, or get outside within around a 10 min. walk"
+  },
+  "requiredInfo": {
+    "contactAgent": "Contact an Agent",
+    "takeTour": "Take a Tour",
+    "estPayment": "Est.Payment"
+  },
+  "overview": {
+    "overview": "Overview",
+    "day": "day",
+    "timeOn": "Time on Veela",
+    "view": "View",
+    "saves": "Saves",
+    "listingBy": "Listing by"
+  },
+  "reportThisListing": "Report this listing",
+  "reportForm": {
+    "name": "Name",
+    "email": "Email",
+    "telephone": "Telephone",
+    "reason": "Reason",
+    "other": "Other",
+    "thisFieldRequired": "This field is required",
+    "notValidEmail": "Not a valid email address",
+    "tellMore": "Tell us more ...",
+    "send": "Send"
+  },
+  "contactAgentModal": {
+    "title": "Contact a Buyer's Agent",
+    "headline": "Connect with a local buyer’s agent who advertises with Veela.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "telephone": "Telephone",
+      "message": "Message",
+      "submit": "Contact Agent",
+      "checkbox": "I want financing information",
+      "thisFieldRequired": "This field is required",
+      "notValidEmail": "Not a valid email address"
+    },
+    "description": "By pressing Contact an Agent, you agree that Veela Group and its affiliates, and real estate professionals may call/text you about your inquiry, which may involve use of automated means and prerecorded/artificial voices. You don't need to consent as a condition of buying any property, goods or services. Message/data rates may apply. You also agree to our Terms of Use. Veela does not endorse any real estate professionals. We may share information about your recent and future site activity with your agent to help them understand what you're looking for in a home."
+  },
+  "scheduleTourForm": {
+    "selectPreferredTime": "Select a preferred time",
+    "inPerson": "In-Person",
+    "videoChat": "Video Chat",
+    "chooseTime": "Choose a time",
+    "email": "Email",
+    "phone": "Phone",
+    "requestVisit": "Request visit",
+    "wantFinanceInfo": "I want financing information",
+    "extraInfo": "By pressing Request visit, you agree that Veela Group and its affiliates, and real estate professionals may call/text you about your inquiry, which may involve use of automated means and prerecorded/artificial voices. You don't need to consent as a condition of buying any property, goods or services. Message/data rates may apply. You also agree to our Terms of Use. Veela does not endorse any real estate professionals. We may share information about your recent and future site activity with your agent to help them understand what you're looking for in a home."
+  }
+}

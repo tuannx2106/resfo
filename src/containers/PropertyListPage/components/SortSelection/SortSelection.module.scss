@@ -1,0 +1,37 @@
+@import 'styles';
+
+.sortSelection {
+  @extend %flex-center-vertical;
+
+  :global {
+    .ant-select .ant-select-selector {
+      border-color: var(--cl-blue-5);
+      border-radius: var(--rounded);
+      min-width: 174px;
+    }
+
+    .ant-select-selection-item,
+    .ant-select-arrow {
+      color: var(--cl-primary);
+    }
+  }
+}
+
+.sortLabel {
+  margin-bottom: 0;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--font-size-sm);
+  margin-right: var(--space-1);
+}
+
+.sortOptions {
+  min-width: 174px !important;
+  width: 174px !important;
+  border-radius: var(--rounded);
+  box-shadow: rgb(0 0 0 / 30%) 0px 8px 12px 0px;
+}
+
+.sortOption {
+  color: var(--cl-gray-11);
+  font-size: var(--font-size-sm);
+}

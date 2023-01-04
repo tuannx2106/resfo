@@ -1,0 +1,26 @@
+@import 'styles';
+
+.root {
+  columns: auto;
+
+  @include mediaquery-mb() {
+    column-count: 2;
+  }
+
+  @include mediaquery-tb() {
+    column-count: 3;
+  }
+
+  @include mediaquery-extra-tb() {
+    column-count: 4;
+  }
+
+  li a {
+    padding-right: 16px;
+    color: var(--cl-gray-11);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

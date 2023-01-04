@@ -1,0 +1,108 @@
+:root {
+  // color
+
+  --cl-white: #fff;
+  --cl-black: #000;
+
+  // gray scale
+  --cl-gray-1: #f8f8f8; // rgb(248, 248, 248);
+  --cl-gray-2: #f9f9fb; // rgb(249, 249, 251)
+  --cl-gray-3: #f1f1f4; // rgb(241, 241, 244)
+  --cl-gray-4: #efefef; // rgb(239, 239, 239)
+  --cl-gray-5: #eee; // rgb(238, 238, 238)
+  --cl-gray-6: #a7a6ab; // rgb(167, 166, 171)
+  --cl-gray-7: #707071;
+  --cl-gray-8: #666;
+  --cl-gray-9: #51515a;
+  --cl-gray-10: #444;
+  --cl-gray-11: #2a2a33; //rgb(42, 42, 51)
+  --cl-gray-12: #2a2a35;
+  --cl-gray-13: #2a2a37;
+  --cl-gray-14: #fbfbfb;
+  --cl-gray-15: #54545a;
+  --cl-gray-16: #0a0a14;
+  --cl-gray-17: #f1f1f4; // rgb(241, 241, 244)
+  --cl-gray-18: #e9e9e9;
+  --cl-gray-19: #e8e9ea; // rgb(232, 233, 234)
+  --cl-gray-20: #f5f6f7; // rgb(245, 246, 247)
+
+  --cl-gray-bd-1: #d8d8d8; // rgb(216, 216, 216)
+  --cl-gray-bd-2: #d1d1d5; // rgb(209, 209, 213)
+  --cl-gray-bd-3: #ccc;
+
+  --cl-gray-opacity-1: rgba(68, 68, 68, 0.85);
+
+  // blue scale
+  --cl-blue-1: #006aff; // rgb(0, 106, 255)
+  --cl-blue-2: #0d4599; // rgb(13, 69, 153)
+  --cl-blue-3: #e0f2ff; // rgb(224, 242, 255)
+  --cl-blue-4: #f2faff; // rgb(242, 250, 255)
+  --cl-blue-5: #d1d5db; // rgb(209 209 213)
+  --cl-blue-6: #f6f6fa; // rgb(246, 246, 250)
+  --cl-blue-7: #596b82; // rgb(89, 107, 130)
+  --cl-blue-8: #62aef7; // rgb(98, 174, 247)
+  --cl-blue-9: #a6b3c4; // rgb(166, 179, 196)
+
+  // purple scale
+  --cl-purple-1: #985dff;
+  --cl-purple-2: #5b33ad;
+
+  // red scale
+  --cl-red-1: #ff5a50;
+  --cl-red-2: #fc384a; // rgb(252, 56, 74)
+  --cl-red-3: #a3000b; // rgb(163, 0, 11)
+  --cl-red-4: #db3a00; // rgb(219, 58, 0)
+  --cl-red-5: #ff7875;
+
+  // yellow scale
+  --cl-yellow-1: #ffd237;
+
+  // green scale
+  --cl-green-1: #03c04b; // rgb(3, 192, 75)
+  --cl-green-2: #128a29; // rgb(18, 138, 41)
+
+  --cl-primary: var(--cl-blue-1);
+
+  // font
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 15px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-extra-xl: 24px;
+  --font-size-xxl: 30px;
+  --font-size-extra-xxl: 36px;
+  --font-size-22: 22px;
+
+  --font-family-base: 'Veela Sans Web', sans-serif;
+  --font-family-heading: 'Veela Sans Web, Display, ui-serif, Georgia, Cambria, Times New Roman, Times', serif;
+
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  // rounded
+  --rounded-sm: 2px;
+  --rounded: 4px;
+  --rounded-md: 8px;
+  --rounded-circle: 50%;
+
+  // spacing
+  --space-1: 4px;
+  --space-2: calc(2 * var(--space-1));
+  --space-3: calc(3 * var(--space-1));
+  --space-4: calc(4 * var(--space-1));
+  --space-6: calc(6 * var(--space-1));
+  --space-8: calc(8 * var(--space-1));
+  --space-18: calc(18 * var(--space-1));
+
+  // constant width / height
+  --header-height-mini: 60px;
+  --header-height: 80px;
+  --property-search-height: 58px;
+  --full-view-height: 100vh;
+
+  --container-width: 1280px;
+}

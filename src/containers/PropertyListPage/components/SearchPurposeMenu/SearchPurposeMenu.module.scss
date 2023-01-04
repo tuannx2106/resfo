@@ -1,0 +1,88 @@
+@import 'styles';
+
+.purposeMenus {
+  color: var(--cl-gray-11);
+  margin-bottom: calc(5 * var(--space-1));
+}
+
+.menuWrapper {
+  position: relative;
+}
+
+.menu {
+  @extend %flex-center;
+  position: relative;
+  cursor: pointer;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  height: 40px;
+
+  .menuHeader {
+    @extend %flex-center;
+    font-size: var(--font-size-lg);
+  }
+
+  .menuRadio,
+  .menuMarked {
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .menuRadio {
+    width: 20px;
+    height: 20px;
+    background-color: var(--cl-white);
+    border: 2px solid rgb(167, 166, 171);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menuMarked {
+    width: 16px;
+    height: 16px;
+    margin-left: var(--space-4);
+    margin-right: var(--space-2);
+
+    &.sale {
+      background-color: var(--cl-red-1);
+    }
+
+    &.rent {
+      background-color: var(--cl-purple-1);
+    }
+
+    &.sold {
+      background-color: var(--cl-yellow-1);
+    }
+  }
+
+  .menuToggleBtn {
+    @extend %flex-center;
+    @extend %y-centered;
+    z-index: 10;
+    right: var(--space-4);
+
+    svg {
+      display: inline-block;
+    }
+  }
+
+  &.selected {
+    .menuRadio {
+      background-color: var(--cl-white);
+      border: 6px solid var(--cl-primary);
+    }
+  }
+}
+
+.purposeMenus.isDropdown {
+  margin-bottom: 0;
+
+  .menuWrapper {
+    padding: var(--space-1) var(--space-4);
+  }
+
+  .menuWrapper + .menuWrapper {
+    border-top: 1px solid var(--cl-gray-17);
+  }
+}

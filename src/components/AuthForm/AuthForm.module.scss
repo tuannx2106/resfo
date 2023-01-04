@@ -1,0 +1,250 @@
+@import 'styles';
+
+.auth {
+  .authTitle {
+    font-family: var(--font-family-heading);
+    text-align: center;
+    font-size: var(--font-size-extra-xl);
+    color: var(--cl-gray-11);
+    font-weight: var(--font-semi-bold);
+    margin-top: var(--space-2);
+  }
+
+  .subModalTitle {
+    text-align: center;
+    font-size: var(--font-size-md);
+    color: var(--cl-gray-11);
+    font-weight: var(--font-light);
+  }
+
+  .backSignInBtn {
+    color: var(--cl-primary);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--cl-gray-11);
+    }
+  }
+
+  .divider {
+    background-color: var(--cl-gray-5);
+    margin: var(--space-4) 0;
+  }
+
+  .formWrapper,
+  .socialForm {
+    padding: 0 var(--space-4);
+  }
+
+  .socialForm {
+    font-size: var(--font-size-md);
+  }
+
+  .forgotPassBtn {
+    color: var(--cl-blue-2);
+    font-size: var(--font-size-md);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .fbBtn,
+  .ggBtn {
+    position: relative;
+
+    svg {
+      position: absolute;
+      left: 40px;
+      @extend %y-centered;
+    }
+  }
+
+  .fbBtn {
+    margin-bottom: 8px;
+    height: 38px !important;
+
+    &:hover {
+      background-color: var(--cl-white);
+      color: var(--cl-primary);
+    }
+  }
+
+  .ggBtn {
+    border-color: var(--cl-gray-6);
+    height: 38px !important;
+
+    &:hover {
+      color: var(--cl-gray-11);
+      border-color: var(--cl-black);
+    }
+  }
+
+  .expandForm {
+    text-align: left;
+  }
+
+  .explainWrapper {
+    text-align: left;
+    margin-bottom: 16px;
+
+    .explainText {
+      @extend %flex-center-vertical;
+      gap: var(--space-1);
+      margin-bottom: 0;
+      font-size: var(--font-size-xs);
+      color: var(--cl-blue-7);
+      margin-top: var(--space-1);
+
+      .checkIcon {
+        color: var(--cl-green-2);
+      }
+
+      .wrongIcon {
+        color: var(--cl-red-3);
+      }
+    }
+  }
+
+  .term {
+    font-size: var(--font-size-xs);
+    color: var(--cl-blue-7);
+
+    a {
+      text-decoration: underline;
+      color: var(--cl-purple-2);
+    }
+  }
+
+  :global {
+    .ant-form-item-label label {
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-semi-bold);
+    }
+
+    .ant-select {
+      text-align: left;
+      font-size: var(--font-size-sm);
+    }
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: var(--rounded);
+      background-color: var(--cl-blue-6);
+    }
+
+    .ant-checkbox-wrapper {
+      font-size: 16px;
+      color: var(--cl-gray-11);
+      line-height: 24px;
+      font-weight: var(--font-regular);
+      margin-bottom: var(--space-4);
+    }
+
+    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+      color: var(--cl-gray-11);
+      text-shadow: none;
+    }
+
+    .ant-tabs-tab {
+      padding: var(--space-4);
+      font-size: var(--font-size-md);
+
+      + .ant-tabs-tab {
+        margin-left: 0;
+      }
+    }
+
+    .ant-tabs-content {
+      text-align: center;
+    }
+
+    .ant-form-item-explain.ant-form-item-explain-error {
+      text-align: left;
+      color: var(--cl-red-3);
+      font-size: var(--font-size-xs);
+    }
+
+    .ant-form-item:last-child {
+      margin-bottom: var(--space-2);
+    }
+
+    .ant-btn {
+      width: 100%;
+      height: 44px;
+      border-radius: var(--rounded);
+    }
+
+    .ant-tabs {
+      @include mediaquery-only-mb() {
+        max-width: 448px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.authModal {
+  :global {
+    .ant-modal-content {
+      border-radius: var(--rounded-md);
+    }
+
+    .ant-modal {
+      @include mediaquery-only-mb() {
+        width: 100% !important;
+        max-width: 100%;
+        top: 0;
+        padding-bottom: 0;
+        margin: 0;
+        overflow-y: auto;
+      }
+
+      width: 448px !important;
+    }
+
+    .ant-modal-content {
+      @include mediaquery-only-mb() {
+        display: flex;
+        flex-direction: column;
+        height: var(--full-view-height);
+      }
+    }
+
+    .ant-modal-body {
+      @include mediaquery-only-mb() {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.passwordInput {
+  position: relative;
+
+  :global {
+    .ant-input {
+      padding-right: calc(23 * var(--space-1));
+    }
+
+    .ant-progress-circle-trail {
+      stroke: var(--cl-gray-bd-2);
+    }
+  }
+}
+
+.progressPassword {
+  position: absolute;
+  right: 0;
+  top: 31px;
+  padding: 0 var(--space-4);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-regular);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  height: 44px;
+
+  p {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,262 @@
+@import 'styles';
+
+.headerRoot {
+  position: relative;
+  background-color: transparent;
+  z-index: 500;
+
+  @include mediaquery-pc {
+    background-color: var(--cl-white);
+    border-bottom: 1px solid var(--cl-gray-5);
+  }
+
+  .icon {
+    font-size: var(--font-size-xxl);
+    cursor: pointer;
+  }
+
+  &.headerCommon .headerNav .collapseButton {
+    color: var(--cl-primary);
+  }
+
+  &.headerProperty {
+    .headerNav {
+      max-width: 100%;
+    }
+
+    .signInText {
+      color: var(--cl-gray-11);
+
+      &:hover {
+        color: var(--cl-blue-1);
+      }
+    }
+  }
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &.isCollapse {
+    display: none;
+  }
+}
+
+.menuProfileDropdown {
+  top: 50px !important;
+  width: 100vw;
+
+  @include mediaquery-extra-tb() {
+    width: 300px;
+    top: 64px !important;
+  }
+
+  :global {
+    .ant-dropdown-menu {
+      width: 100vw;
+
+      @include mediaquery-extra-tb() {
+        width: 300px;
+      }
+    }
+
+    .ant-dropdown-menu-item {
+      padding: var(--space-2) var(--space-6);
+      font-weight: var(--font-semi-bold);
+
+      &:hover {
+        background-color: var(--cl-blue-4);
+      }
+    }
+  }
+}
+
+.headerNav {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  max-width: var(--container-width);
+  margin: auto;
+  height: var(--header-height-mini);
+  padding: 0 var(--space-4);
+
+  @include mediaquery-pc {
+    background-color: var(--cl-white);
+    height: var(--header-height);
+  }
+
+  .collapseButton {
+    color: var(--cl-white);
+    cursor: pointer;
+
+    svg {
+      font-size: var(--font-size-xl);
+    }
+
+    @include mediaquery-pc {
+      display: none;
+    }
+  }
+
+  .headerLogoPc,
+  .headerLogoMb {
+    @extend %x-centered;
+  }
+
+  .headerLogoPc {
+    cursor: pointer;
+    display: none;
+
+    @include mediaquery-pc {
+      display: block;
+    }
+  }
+
+  .headerLogoMb {
+    cursor: pointer;
+    display: block;
+
+    @include mediaquery-pc {
+      display: none;
+    }
+  }
+
+  &.active {
+    background-color: var(--cl-white);
+  }
+}
+
+.headerList {
+  @extend %flex-center-vertical;
+  height: var(--header-height);
+  justify-content: space-between;
+  margin-bottom: 0;
+  display: none;
+
+  @include mediaquery-pc {
+    display: flex;
+  }
+
+  &.vertical {
+    li {
+      position: relative;
+    }
+  }
+
+  > li {
+    padding: 28px 14px;
+    cursor: pointer;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:hover {
+      a {
+        color: var(--cl-blue-1);
+      }
+
+      > .megaMenu,
+      > .vertical {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.1s ease 0.4s, visibility 0.1s ease;
+      }
+    }
+
+    a {
+      color: var(--cl-gray-11);
+      font-size: var(--font-size-sm);
+    }
+
+    .megaMenu,
+    .vertical {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0s ease 0.5s, visibility 0.5s ease;
+    }
+  }
+}
+
+.locale {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  cursor: pointer;
+  display: none;
+
+  @include mediaquery-mb() {
+    display: flex;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    color: var(--cl-gray-5);
+
+    @include mediaquery-pc() {
+      color: var(--cl-gray-11);
+    }
+  }
+}
+
+.profileImage {
+  border-radius: 50%;
+}
+
+.signInText {
+  margin-bottom: 0;
+  cursor: pointer;
+  color: var(--cl-white);
+
+  @include mediaquery-pc() {
+    color: var(--cl-gray-11);
+  }
+
+  &:hover {
+    color: var(--cl-blue-1);
+  }
+}
+
+.authModal {
+  :global {
+    .ant-modal-content {
+      border-radius: var(--rounded-md);
+    }
+
+    .ant-modal {
+      width: 448px !important;
+
+      @include mediaquery-only-mb() {
+        width: 100% !important;
+        max-width: 100%;
+        top: 0;
+        padding-bottom: 0;
+        margin: 0;
+      }
+    }
+
+    .ant-modal-content {
+      @include mediaquery-only-mb() {
+        display: flex;
+        flex-direction: column;
+        height: var(--full-view-height);
+        border-radius: 0;
+        overflow-y: scroll;
+      }
+    }
+
+    .ant-modal-body {
+      @include mediaquery-only-mb() {
+        flex: 1;
+      }
+    }
+  }
+}

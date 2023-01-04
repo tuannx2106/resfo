@@ -1,0 +1,32 @@
+.dropdown {
+  svg {
+    font-size: var(--font-size-base);
+  }
+
+  :global {
+    .ant-menu {
+      width: 200x;
+      padding: var(--space-2) 0;
+      border-radius: 4px;
+      box-shadow: rgb(0 0 0 / 30%) 0px 8px 12px 0px;
+
+      button {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    .ant-menu-item {
+      font-size: var(--font-size-base);
+      padding: var(--space-2) var(--space-4);
+      height: auto;
+      color: var(--cl-gray-11);
+      line-height: 1.5;
+      text-overflow: clip;
+
+      &:hover {
+        background-color: var(--cl-blue-3);
+      }
+    }
+  }
+}

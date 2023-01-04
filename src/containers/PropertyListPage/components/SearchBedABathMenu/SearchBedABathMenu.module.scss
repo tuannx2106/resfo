@@ -1,0 +1,35 @@
+@import 'styles';
+
+.bedMenus {
+  .bedExactCheckbox {
+    margin-top: var(--space-2);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-regular);
+    color: var(--cl-gray-11);
+  }
+}
+
+.groupButton {
+  @extend %flex-center-vertical;
+  width: 100%;
+
+  .groupButtonItem {
+    flex: 1;
+    text-align: center;
+  }
+}
+
+.title {
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-semi-bold);
+}
+
+.menus.isDropdown {
+  padding: var(--space-3) var(--space-4);
+  .title {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--space-1);
+  }
+}

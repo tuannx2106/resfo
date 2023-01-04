@@ -1,0 +1,41 @@
+// ========= flex  ========
+%flex-center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+%flex-center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%pos-centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+%y-centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+%x-centered {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

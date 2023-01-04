@@ -1,0 +1,20 @@
+{
+  "map": {
+    "draw": "Vẽ để tìm",
+    "mapMode": "Chế độ",
+    "street": "Đường phố",
+    "satellite": "Vệ tinh",
+    "cancel": "Huỷ",
+    "apply": "Áp dụng",
+    "removeBoundary": "Xoá đường biên",
+    "drawAShapeAround": "Hãy khoanh tròn những khu vực bạn muốn sống",
+    "showingResult": "Hiện {{result}} trên {{total}} kết quả trong khu vực này"
+  },
+  "sort": {
+    "label": "Sort by",
+    "postDate": "Post date",
+    "updateDate": "Update date",
+    "paidListing": "Paid listing",
+    "mostViewListing": "Most view listing"
+  }
+}

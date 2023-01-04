@@ -1,0 +1,22 @@
+.headline {
+  font-family: var(--font-family-heading);
+  color: var(--cl-gray-11);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  &.headline:global(.ant-typography) {
+    margin: 0;
+  }
+}
+
+h1.headline:global(.ant-typography) {
+  font-size: var(--font-size-extra-xxl);
+}
+
+h4.headline:global(.ant-typography) {
+  font-size: var(--font-size-22);
+}

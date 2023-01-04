@@ -1,0 +1,19 @@
+@import 'styles';
+
+.setting {
+  background-color: var(--cl-gray-2);
+}
+
+h1.title:global(.ant-typography) {
+  margin: var(--space-6) 0;
+}
+
+.settingSection {
+  padding: calc(2 * var(--space-4));
+  border: 1px solid var(--cl-blue-5);
+  background: var(--cl-white);
+}
+
+.settingSectionItem + .settingSectionItem {
+  margin-top: var(--space-4);
+}

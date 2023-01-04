@@ -1,0 +1,135 @@
+@import 'styles';
+
+.root {
+  margin: var(--space-6) 0;
+  font-size: var(--font-size-md);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include mediaquery-tb() {
+    flex-direction: row;
+  }
+}
+
+.addressArea {
+  line-height: 1.25;
+
+  .amenities {
+    display: none;
+
+    @include mediaquery-tb() {
+      display: inline-flex;
+    }
+  }
+}
+
+.priceArea {
+  margin-top: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaquery-tb() {
+    margin-top: 0;
+    width: 40%;
+  }
+
+  .amenities {
+    display: inline-flex;
+    margin-top: 0;
+    min-width: 96px;
+
+    @include mediaquery-tb() {
+      display: none;
+    }
+  }
+
+  :global {
+    .ant-btn-link {
+      padding: 0;
+      height: auto;
+    }
+  }
+}
+
+.amenities {
+  margin-top: var(--space-4);
+
+  svg {
+    margin-right: var(--space-2);
+    width: 20px !important;
+  }
+}
+
+.price,
+.address {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  line-height: 40px;
+
+  @include mediaquery-tb() {
+    font-size: var(--font-size-xxl);
+  }
+}
+
+.estPayment {
+  margin-bottom: var(--space-2);
+}
+
+.btnGetQualified {
+  font-weight: 600;
+  margin-left: var(--space-2);
+
+  svg {
+    margin-right: var(--space-1);
+  }
+}
+
+.btnReport {
+  display: block;
+  margin-top: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--cl-gray-7);
+}
+
+.modalTakeTour {
+  :global {
+    .ant-modal-content {
+      overflow: hidden;
+
+      @include mediaquery-tb-base() {
+        border-radius: 8px;
+      }
+    }
+
+    .ant-modal-body {
+      overflow: auto;
+      height: calc(var(--full-view-height) - 55px);
+
+      @include mediaquery-tb-base() {
+        height: 80vh;
+        max-height: 900px;
+      }
+    }
+
+    .ant-modal {
+      top: 0;
+      margin: 0;
+      padding: 0;
+      width: 100% !important;
+      max-width: 100%;
+
+      @include mediaquery-tb-base() {
+        width: 400px !important;
+        top: 64px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.modalTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  text-align: center;
+}

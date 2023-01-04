@@ -1,0 +1,42 @@
+.root {
+  display: flex;
+  align-items: center;
+}
+
+.slide {
+  width: 88px;
+}
+
+.date {
+  width: 88px;
+  border: 2px solid var(--cl-gray-bd-2);
+  font-size: var(--font-size-sm);
+  line-height: 2;
+  padding: var(--space-4);
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--cl-gray-5);
+  }
+
+  &.isActive {
+    background-color: var(--cl-blue-4);
+    border-color: var(--cl-blue-1);
+  }
+
+  time {
+    display: inline-block;
+  }
+}
+
+.btnLeft,
+.btnRight {
+  background: none;
+  border: 0;
+  color: var(--cl-blue-1);
+  font-size: var(--font-size-xl);
+}

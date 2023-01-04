@@ -1,0 +1,8 @@
+.footer {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.footerItem:not(:last-child) {
+  border-bottom: 1px solid var(--cl-gray-bd-1);
+}

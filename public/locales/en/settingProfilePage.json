@@ -1,0 +1,95 @@
+{
+  "title": "Profile",
+  "accountSetting": "Account settings",
+  "edit": "Edit",
+  "modal": {
+    "cancel": "Cancel",
+    "apply": "Apply"
+  },
+  "personalInfo": {
+    "title": "Personal Info",
+    "editName": {
+      "title": "Name",
+      "desc": "Your first and last given names. Updates are reflected across all Veela experiences.",
+      "modalTitle": "Edit name",
+      "firstName": "First name",
+      "lastName": "Last name"
+    },
+    "editScreenName": {
+      "title": "Screen name",
+      "desc": "Prefer to remain anonymous when writing reviews? Choose a unique screen name instead.",
+      "modalTitle": "Screen name",
+      "screenName": "Screen name"
+    },
+    "editPhoto": {
+      "title": "Photo",
+      "desc": "Personalize your profile pic with a custom photo.",
+      "modalTitle": "Edit photo"
+    },
+    "review": {
+      "title": "Reviews",
+      "desc": "Manage the reviews you’ve written for professionals, rentals, and more.",
+      "manage": "Manage"
+    }
+  },
+  "security": {
+    "title": "Sign in & Security",
+    "editEmail": {
+      "title": "Email",
+      "desc": "The email address associated with your account.",
+      "modalTitle": "Edit email",
+      "currentEmail": "Your current email is",
+      "newEmail": "New email",
+      "confirmEmail": "Confirm new email"
+    },
+    "editPassword": {
+      "title": "Password",
+      "desc": "Set a unique password to protect your account.",
+      "changePassword": "Change password",
+      "modalTitle": "Change password",
+      "currentPassword": "Current password",
+      "currentPasswordHint": "Password currently associated with your account",
+      "newPassword": "New password",
+      "passwordRule1": "At least 8 characters",
+      "passwordRule2": "Mix of letters and numbers",
+      "passwordRule3": "Contains a special character",
+      "passwordRule4": "Mix of uppercase and lowercase letters",
+      "confirmPassword": "Confirm password"
+    },
+    "fa": {
+      "title": "2-Step Verification",
+      "desc": "Make your account extra secure. Along with your password, you'll need to enter a code that we text to your phone each time you sign in.",
+      "enable": "Enable",
+      "modalTitle": "Enter your phone number",
+      "formDesc": "Enter the phone number you want to use for two-step verification. {{tag}} SMS fees may apply",
+      "phoneNumber": "Phone number"
+    },
+    "ggSignIn": {
+      "title": "Google sign in",
+      "desc": "You've linked your Google account to Veela and are using it to sign in. You are signed in as {{email}}.",
+      "unLink": "Unlink",
+      "modalTitle": "Unlink account",
+      "formDesc": "Are you sure you want to unlink this account?"
+    },
+    "fbSignIn": {
+      "title": "Facebook sign in",
+      "desc": "You've linked your Facebook account to Veela and are using it to sign in.",
+      "unLink": "Unlink",
+      "modalTitle": "Unlink account",
+      "formDesc": "Are you sure you want to unlink this account?"
+    }
+  },
+  "manageAccount": {
+    "title": "Manage Account",
+    "deactivate": {
+      "title": "Deactivate my account",
+      "desc": "This will shut down your account, but retain your information. You won't be able to sign in again until your account is reactivated.",
+      "deactivateBtn": "Deactivate account"
+    },
+    "privacy": {
+      "title": "Privacy & Cookies",
+      "desc": "Tools that allow you to see and manage your personal data.",
+      "privacyLink": "Go to Privacy Portal"
+    }
+  }
+}

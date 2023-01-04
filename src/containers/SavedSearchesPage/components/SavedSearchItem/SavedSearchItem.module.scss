@@ -1,0 +1,103 @@
+@import 'styles';
+
+.searchItemWrapper + .searchItemWrapper {
+  margin-top: var(--space-4);
+}
+
+.searchItem {
+  @extend %flex-center-vertical;
+  border: 1px solid var(--cl-gray-bd-2);
+  padding: var(--space-6);
+  border-radius: var(--space-1);
+  justify-content: space-between;
+  background-color: var(--cl-white);
+  font-size: var(--font-size-md);
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+p.searchItemLeftTitle {
+  color: var(--cl-blue-1);
+  margin-bottom: var(--space-2);
+  cursor: pointer;
+
+  :global {
+    .ant-tag {
+      border-radius: 999px;
+      color: var(--cl-white);
+    }
+  }
+}
+
+.searchItemTag {
+  margin-left: var(--space-4);
+}
+
+.action {
+  @extend %flex-center-vertical;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.actionText {
+  margin-right: var(--space-4);
+  color: var(--cl-gray-6);
+  font-weight: var(--font-light);
+  display: none;
+
+  @include mediaquery-tb() {
+    display: block;
+  }
+
+  span {
+    font-weight: var(--font-bold);
+  }
+}
+
+.deleteButton {
+  display: none;
+
+  @include mediaquery-tb() {
+    display: block;
+  }
+}
+
+.settingDeleteModalButtons {
+  text-align: right;
+}
+
+.settingEditModalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settingEditModalBody {
+  display: flex;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+  flex-direction: column;
+
+  @include mediaquery-mb() {
+    flex-direction: row;
+  }
+
+  img {
+    height: auto;
+    max-width: 50%;
+    align-self: center;
+  }
+}
+
+.subscription {
+  display: flex;
+  align-items: flex-end;
+  gap: calc(4 * var(--space-1));
+
+  @include mediaquery-tb() {
+    gap: calc(12 * var(--space-1));
+  }
+}

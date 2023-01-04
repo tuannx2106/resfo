@@ -1,0 +1,44 @@
+@import 'styles';
+
+.main {
+  min-height: 540px;
+  background-color: var(--cl-gray-2);
+}
+
+.mainContent {
+  padding: calc(2 * var(--space-4)) var(--space-4);
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  min-height: var(--full-view-height);
+}
+
+h1.title:global(.ant-typography) {
+  font-size: var(--font-size-extra-xl);
+
+  @include mediaquery-extra-tb {
+    font-size: var(--font-size-extra-xxl);
+  }
+}
+
+.mainContentTitle {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.searchBtn {
+  @extend %flex-center-vertical;
+  gap: var(--space-2);
+  color: var(--cl-primary);
+  cursor: pointer;
+
+  &:hover span {
+    text-decoration: underline;
+  }
+
+  span {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-semi-bold);
+  }
+}

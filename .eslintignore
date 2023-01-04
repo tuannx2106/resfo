@@ -1,0 +1,10 @@
+# Config file is ignored by default
+!.eslintrc.js
+prettier.js
+
+build/
+public/
+node_modules/
+**/node_modules/
+# Temporaly ignore test
+**/__tests__/

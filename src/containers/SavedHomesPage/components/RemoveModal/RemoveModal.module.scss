@@ -1,0 +1,39 @@
+@import 'styles';
+
+.btnTrigger {
+  padding: 0;
+
+  span {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-semi-bold);
+  }
+
+  svg:global(.svg-inline--fa.fa-w-14) {
+    margin-right: var(--space-2);
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+  }
+}
+
+.form {
+  :global {
+    .ant-radio-wrapper {
+      display: block;
+      font-size: var(--font-size-md);
+      color: var(--cl-gray-11);
+      padding: var(--space-2) 0;
+      margin: 0;
+    }
+
+    .ant-radio-inner {
+      width: 20px;
+      height: 20px;
+
+      &::after {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

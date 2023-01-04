@@ -1,0 +1,10 @@
+{
+  "type": "Type",
+  "yearBuilt": "Year Built",
+  "heating": "Heating",
+  "cooling": "Cooling",
+  "parking": "Parking",
+  "hoa": "HOA",
+  "lot": "Lot",
+  "price": "Price/sqrf"
+}

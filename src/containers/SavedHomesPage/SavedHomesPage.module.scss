@@ -1,0 +1,51 @@
+@import 'styles';
+
+.main {
+  background-color: var(--cl-gray-2);
+}
+
+.mainContent {
+  padding: calc(2 * var(--space-4)) var(--space-4);
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+h1.title:global(.ant-typography) {
+  font-size: var(--font-size-extra-xl);
+
+  @include mediaquery-extra-tb {
+    font-size: var(--font-size-extra-xxl);
+  }
+}
+
+.headline {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  margin-bottom: var(--space-6);
+}
+
+.propertyItems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.propertyItem {
+  width: 100%;
+
+  @include mediaquery-tb() {
+    width: calc(50% - var(--space-2));
+    flex-basis: calc(50% - var(--space-2));
+  }
+
+  @include mediaquery-pc() {
+    width: calc(33.3333% - var(--space-2));
+    flex-basis: calc(33.3333% - var(--space-2));
+  }
+}
+
+.pagination {
+  margin-top: calc(2 * var(--space-4));
+}

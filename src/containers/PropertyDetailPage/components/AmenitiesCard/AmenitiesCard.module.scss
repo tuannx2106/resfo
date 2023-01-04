@@ -1,0 +1,55 @@
+@import "styles";
+
+.root {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: var(--cl-white);
+  border: 1px solid var(--cl-gray-18);
+
+  + .root {
+    margin-top: var(--space-4);
+  }
+}
+
+.title {
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  background-color: var(--cl-blue-6);
+  border-bottom: 1px solid var(--cl-gray-18);
+
+  svg {
+    color: var(--cl-blue-1);
+    margin-right: var(--space-2);
+  }
+}
+
+.amenitiesWrapper {
+  padding: var(--space-3) var(--space-4) var(--space-2);
+
+  + .amenitiesWrapper {
+    border-top: 1px solid var(--cl-gray-18);
+  }
+}
+
+.amenitiesTitle {
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.amenity {
+  width: 50%;
+  padding-right: var(--space-2);
+
+  @include mediaquery-tb() {
+    width: 33.33%;
+  }
+
+  &::before {
+    content: '• ';
+  }
+}

@@ -1,0 +1,36 @@
+@import 'styles';
+
+.settingMenuWrapper {
+  width: 100%;
+  padding: 0 var(--space-4);
+  margin: 0 auto;
+  max-width: var(--container-width);
+  background-color: var(--cl-white);
+}
+
+.settingMenu {
+  @extend %flex-center-vertical;
+  gap: calc(2 * var(--space-4));
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  margin: 0;
+}
+
+.settingMenuItem {
+  a {
+    display: inline-block;
+    padding-top: calc(var(--space-3) - 2px);
+    padding-bottom: calc(var(--space-3) - 5px);
+    color: var(--cl-gray-16);
+    font-weight: var(--font-regular);
+    border-bottom: 3px solid var(--cl-white);
+    white-space: nowrap;
+    font-size: var(--font-size-sm);
+  }
+
+  &.active a {
+    font-weight: var(--font-semi-bold);
+    color: var(--cl-primary);
+    border-color: var(--cl-primary);
+  }
+}

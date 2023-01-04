@@ -1,0 +1,51 @@
+{
+  "notifications": "Notifications",
+  "savedSearches": "Saved searches",
+  "savedSearchesDescription": "Updates on homes matching your saved searches.",
+  "savedHomes": "Saved homes",
+  "savedHomesDescription": "Updates for properties on your Saved homes list.",
+  "yourHome": "Your home",
+  "propertyRecommendations": "Property recommendations",
+  "homeLoansRefinancing": "Home loans & Refinancing",
+  "rentalPropertyManagement": "Rental property management",
+  "zillowNews": "Veela news",
+  "backToAccountSetting": "Back to account setting",
+  "mortgageProductUpdatesOffers": "Mortgage product updates & offers",
+  "modal": {
+    "edit": "Edit",
+    "push": "Push",
+    "email": "Email",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "turnOffAllNotifications": "Turn off all notifications",
+    "emailNotificationOption": {
+      "off": "Off",
+      "instant": "Instant",
+      "daily": "Daily",
+      "weekly": "Weekly"
+    },
+    "areYouSure": "Are you sure"
+  },
+  "homeLoanTitle": "Mortgage product updates & offerss",
+  "homeLoanDescription": "Personalized mortgage info and offers that may be available for you.",
+  "newSettingTitle": "Tips, guides, and product updates",
+  "newSettingDescription": "Real estate tips, Veela guides, and offbeat news for buyers, renters, sellers, and homeowners.",
+  "switchText": {
+    "on": "On",
+    "off": "Off"
+  },
+  "homeRecommendationsTitle": "Home recommendations",
+  "homeRecommendationsDescription": "Property recommendations based on your Veela activity.",
+  "propertyManagementResources": "Property management resources",
+  "rentalManagerNotifications": "Veela Rental Manager notifications",
+  "rentalManagerNotificationsDescription": "Updates and reminders about your rental property listings, renter applications, leases, and payments.",
+  "buildingReviews": "Building reviews (multi-family properties only)",
+  "portfolioPerformance": "Portfolio performance",
+  "savedHomeUpdates": "Saved home updates",
+  "marketReports": "Market reports",
+  "notificationOn": "Get notifications from Veela so you can stay on top of your journey to home. Turn them off any time you’d like.",
+  "notificationOff": "You’ve turned off all notifications from Veela. You can turn them back on at any time.",
+  "homeReports": "Home reports",
+  "homeReportsDescription": "Details on your homes Zestimate, the real estate market in your area, and more.",
+  "sellerUpdates": "Seller updates"
+}

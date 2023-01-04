@@ -1,0 +1,32 @@
+.modal {
+  :global {
+    textarea.ant-input {
+      font-size: var(--font-size-md);
+      padding: calc(2 * var(--space-1)) var(--space-4);
+      border-radius: var(--rounded);
+      background: var(--cl-blue-6);
+      border-color: var(--cl-blue-5);
+      font-weight: var(--font-light);
+    }
+
+    .ant-form-item-explain {
+      text-align: left;
+      color: var(--cl-red-3);
+      font-size: var(--font-size-xs);
+    }
+  }
+}
+
+.modalHead {
+  padding: 0 var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.modalExplain {
+  font-size: 10px;
+  color: var(--cl-blue-7);
+}
+
+.contactButton {
+  width: 100%;
+}

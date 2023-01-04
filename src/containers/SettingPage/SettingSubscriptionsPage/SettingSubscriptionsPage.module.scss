@@ -1,0 +1,35 @@
+h1.title:global(.ant-typography) {
+  margin: var(--space-6) 0;
+}
+
+.settingSection {
+  padding: calc(2 * var(--space-4));
+  border: 1px solid var(--cl-blue-5);
+  background: var(--cl-white);
+
+  &.active {
+    position: relative;
+    padding-top: calc(25 * var(--space-1));
+
+    .settingSectionItem {
+      &:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: var(--cl-white);
+        box-shadow: rgb(0 0 0 / 30%) 0px 4px 8px 0px;
+        border: 1px solid var(--cl-blue-10);
+        padding: var(--space-2) var(--space-4);
+      }
+
+      &:not(:first-child) {
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.settingSectionItem + .settingSectionItem {
+  margin-top: var(--space-4);
+}

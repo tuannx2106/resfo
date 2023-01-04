@@ -1,0 +1,152 @@
+@import 'styles';
+
+.searchSection {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  background-color: var(--cl-white);
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid rgb(204, 204, 204);
+  border-bottom: 1px solid rgb(204, 204, 204);
+
+  @include mediaquery-pc {
+    top: var(--header-height);
+  }
+}
+
+.searchSectionModal {
+  .sectionModalTitle {
+    margin: 0;
+    font-weight: var(--font-semi-bold);
+    font-size: var(--font-size-xl);
+  }
+
+  :global {
+    .ant-modal {
+      max-width: 100%;
+      margin-top: 0;
+      top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      @include mediaquery-extra-tb {
+        padding-top: 40px;
+      }
+    }
+
+    .ant-modal-header {
+      padding: var(--space-2) var(--space-4);
+      position: sticky;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+
+      @include mediaquery-extra-tb {
+        padding: var(--space-2) calc(2 * var(--space-3));
+      }
+    }
+
+    .ant-modal-body {
+      padding: var(--space-4);
+
+      @include mediaquery-extra-tb {
+        padding: var(--space-4) calc(2 * var(--space-3));
+      }
+
+      @include mediaquery-extra-tb {
+        height: 720px;
+        max-height: 80%;
+        overflow-y: auto;
+      }
+    }
+
+    .ant-modal-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.searchSectionLeft > button,
+.searchSectionMiddle > button,
+.searchSectionRight .saveButton {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-semi-bold);
+  margin-right: var(--space-2);
+  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
+}
+
+.moreButton,
+.saveButton {
+  border-radius: var(--rounded);
+}
+
+.saveText {
+  padding: 0;
+  outline: 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-semi-bold);
+
+  @include mediaquery-pc {
+    font-size: var(--font-size-md);
+  }
+}
+
+.searchSectionLeft {
+  @extend %flex-center-vertical;
+  flex-wrap: wrap;
+  display: none;
+
+  @include mediaquery-pc {
+    display: flex;
+  }
+
+  svg {
+    margin-right: calc(0.5 * var(--space-1));
+  }
+
+  :global {
+    .ant-input {
+      font-size: var(--font-size-xs);
+      font-weight: var(--font-semi-bold);
+    }
+
+    .ant-input-affix-wrapper {
+      width: 252px;
+      margin-right: var(--space-2);
+    }
+  }
+
+  .searchButton {
+    &.target span:first-child {
+      display: inline-block;
+      vertical-align: text-bottom;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      margin-right: var(--space-1);
+    }
+
+    &.sale span:first-child {
+      background-color: var(--cl-red-1);
+    }
+
+    &.rent span:first-child {
+      background-color: var(--cl-purple-1);
+    }
+
+    &.sold span:first-child {
+      background-color: var(--cl-yellow-1);
+    }
+  }
+}
+
+.searchSectionMiddle {
+  display: block;
+
+  @include mediaquery-pc() {
+    display: none;
+  }
+}

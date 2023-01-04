@@ -1,0 +1,44 @@
+.root {
+  font-size: var(--font-size-base);
+  height: 36px;
+  border-radius: 4px;
+  color: var(--cl-blue-1);
+  box-shadow: none;
+  text-shadow: none;
+  border: 1px solid var(--cl-blue-1);
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: var(--cl-blue-2);
+    border-color: var(--cl-blue-2);
+    background-color: var(--cl-blue-4);
+  }
+
+  &:global(.ant-btn-circle) {
+    border-radius: 50%;
+  }
+
+  &:global(.ant-btn-primary) {
+    color: var(--cl-white);
+
+    &:hover {
+      background-color: var(--cl-blue-2);
+      color: var(--cl-white);
+    }
+  }
+
+  &:global(.ant-btn-dangerous) {
+    &:hover {
+      background-color: var(--cl-red-5);
+      color: var(--cl-white);
+    }
+  }
+
+  &:global(.ant-btn-link) {
+    border: 0;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+}

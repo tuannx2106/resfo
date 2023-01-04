@@ -1,0 +1,87 @@
+@import 'styles';
+
+.root {
+  margin: 0 auto;
+  max-width: 992px;
+  width: 100%;
+}
+
+.innerContent {
+  margin: 0 var(--space-4);
+}
+
+.section {
+  margin: var(--space-8) 0;
+
+  h3 {
+    margin-bottom: var(--space-4);
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+  }
+
+  .headlineGroup {
+    margin-bottom: 0;
+  }
+
+  .sectionSubHeadline {
+    margin-bottom: var(--space-4);
+  }
+
+  .propertyExtraInfos {
+    display: flex;
+    gap: var(--space-4) var(--space-2);
+    padding: var(--space-6) 0;
+  }
+
+  .propertyExtraInfo {
+    width: calc(50% - var(--space-2));
+
+    @include mediaquery-tb() {
+      width: calc(25% - var(--space-2));
+    }
+  }
+}
+
+.schedule {
+  display: flex;
+  gap: var(--space-4);
+
+  b {
+    font-weight: 700;
+  }
+
+  & + .schedule {
+    margin-top: var(--space-3);
+  }
+}
+
+.listingBySection {
+  line-height: 1.7;
+}
+
+.companyLogo {
+  margin: var(--space-1) 0;
+}
+
+.lastModified,
+.companyDescription {
+  color: var(--cl-gray-7);
+}
+
+.neighborhood {
+  font-size: var(--font-size-md);
+
+  b {
+    font-weight: 700;
+  }
+}
+
+.walkingScoreIcon {
+  width: 36px;
+  height: 36px;
+}
+
+.walkingScore {
+  color: var(--cl-blue-1);
+  margin: 0 var(--space-1);
+}

@@ -1,0 +1,63 @@
+@import 'styles';
+
+.savedSearchEmpty {
+  @extend %flex-center-vertical;
+  background-color: var(--cl-white);
+  border-radius: 2px;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: calc(12 * var(--space-1)) var(--space-4);
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.savedSearchEmptyImage {
+  svg {
+    max-width: 100%;
+    height: 162px;
+  }
+}
+
+.savedSearchEmptyTitle {
+  font-weight: var(--font-bold);
+  font-size: var(--font-size-extra-xl);
+  font-family: var(--font-family-heading);
+
+  @include mediaquery-tb() {
+    font-size: var(--font-size-extra-xxl);
+  }
+}
+
+.savedSearchApp {
+  display: flex;
+  width: 100%;
+  background-color: var(--cl-blue-4);
+  padding: var(--space-4);
+  gap: var(--space-4);
+
+  @include mediaquery-extra-tb() {
+    width: 634px;
+    padding: var(--space-4) calc(12 * var(--space-1));
+  }
+
+  p {
+    text-align: left;
+  }
+}
+
+.savedSearchAppIcon {
+  min-width: 44px;
+}
+
+.locationSearch {
+  width: 100%;
+  margin-top: calc(14 * var(--space-1));
+  text-align: left;
+
+  @include mediaquery-extra-tb() {
+    width: 650px;
+  }
+}

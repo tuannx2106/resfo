@@ -1,0 +1,49 @@
+@import 'styles';
+
+.extraInfo,
+.extraInfoItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.extraInfo {
+  flex-wrap: wrap;
+  gap: var(--space-6) 6px;
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-1);
+  display: none;
+
+  @include mediaquery-mb() {
+    display: flex;
+  }
+}
+
+.extraInfoItem {
+  width: calc(33.333% - var(--space-1));
+
+  img {
+    width: 24px;
+  }
+}
+
+.extraInfoBody {
+  padding-left: var(--space-1);
+  width: calc(100% - 24px);
+}
+
+.extraInfoName,
+.extraInfoValue {
+  margin-bottom: 0;
+}
+
+.extraInfoName {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-semi-bold);
+  white-space: nowrap;
+}
+
+.extraInfoValue {
+  font-size: var(--font-size-xs);
+  color: var(--cl-blue-7);
+  word-break: break-word;
+}

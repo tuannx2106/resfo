@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Veela Sans Web';
+  src: url('VeelaSansWeb-Regular.eot');
+  src: url('VeelaSansWeb-Regular.eot?#iefix') format('embedded-opentype'),
+    url('VeelaSansWeb-Regular.woff2') format('woff2'), url('VeelaSansWeb-Regular.woff') format('woff'),
+    url('VeelaSansWeb-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Veela Sans Web';
+  src: url('VeelaSansWeb-Bold.eot');
+  src: url('VeelaSansWeb-Bold.eot?#iefix') format('embedded-opentype'), url('VeelaSansWeb-Bold.woff2') format('woff2'),
+    url('VeelaSansWeb-Bold.woff') format('woff'), url('VeelaSansWeb-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,52 @@
+@import 'styles';
+
+.root {
+  position: relative;
+}
+
+.similarHomeSlider {
+  width: 100%;
+  height: 320px;
+}
+
+.swiperSlide {
+  width: 100%;
+  min-width: 240px;
+  max-width: 300px;
+
+  @include mediaquery-tb() {
+    width: calc(33% - 12px);
+  }
+
+  @include mediaquery-pc() {
+    width: calc(25% - 12px);
+    min-width: 0;
+  }
+}
+
+.btnLeft,
+.btnRight {
+  @extend %y-centered;
+
+  position: absolute;
+  background-color: var(--cl-white);
+  z-index: 1;
+  font-size: var(--font-size-sm);
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--cl-gray-bd-1);
+  border-radius: 50%;
+  display: none;
+
+  @include mediaquery-tb() {
+    display: block;
+  }
+}
+
+.btnLeft {
+  left: calc(-3 * var(--space-1));
+}
+
+.btnRight {
+  right: calc(-3 * var(--space-1));
+}

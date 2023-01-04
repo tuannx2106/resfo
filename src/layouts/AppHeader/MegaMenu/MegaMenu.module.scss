@@ -1,0 +1,83 @@
+.megaMenuWrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 1px solid var(--cl-gray-bd-1);
+  background-color: var(--cl-white);
+  z-index: 500;
+
+  &.vertical {
+    right: 0;
+    width: 300px;
+    left: auto;
+
+    .megaMenu .megaMenuList {
+      flex-direction: column;
+
+      > li:first-child {
+        padding-bottom: 20px;
+      }
+
+      & > li + li {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 20px;
+        border-top: 1px solid var(--cl-gray-bd-1);
+        border-left: 0;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.megaMenu {
+  max-width: var(--container-width);
+  margin: auto;
+  padding: 24px;
+
+  .megaMenuListTitle {
+    color: var(--cl-gray-11);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-semi-bold);
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.megaMenuList {
+  display: flex;
+
+  > li + li {
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left: 1px solid var(--cl-gray-bd-1);
+  }
+}
+
+.megaMenuListItem {
+  display: flex;
+
+  ul {
+    & + ul {
+      margin-left: 20px;
+    }
+
+    li {
+      line-height: 40px;
+
+      a {
+        font-size: var(--font-size-base);
+        color: var(--cl-blue-1);
+
+        &:hover {
+          text-decoration: underline;
+          color: var(--cl-gray-11);
+        }
+      }
+    }
+  }
+}

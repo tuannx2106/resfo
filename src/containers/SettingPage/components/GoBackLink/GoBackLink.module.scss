@@ -1,0 +1,19 @@
+@import 'styles';
+
+.root {
+  @extend %flex-center-vertical;
+  color: var(--cl-primary);
+  cursor: pointer;
+  gap: var(--space-3);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    margin-bottom: 0;
+    line-height: 1;
+    color: var(--cl-primary);
+    font-size: var(--font-size-sm);
+  }
+}

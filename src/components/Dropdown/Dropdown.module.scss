@@ -1,0 +1,34 @@
+.dropdown {
+  padding-top: 0;
+  color: var(--cl-gray-11);
+  min-width: 400px;
+  max-width: 100vh;
+
+  :global {
+    .ant-tooltip.ant-tooltip-placement-bottom,
+    .ant-tooltip.ant-tooltip-placement-bottomLeft,
+    .ant-tooltip.ant-tooltip-placement-bottomRight {
+      padding-top: 0;
+    }
+
+    .ant-tooltip-inner,
+    .ant-tooltip-arrow-content {
+      background-color: var(--cl-white);
+    }
+
+    .ant-tooltip-inner {
+      padding: 0;
+    }
+
+    .ant-tooltip-arrow {
+      width: 20px;
+      height: 20px;
+      top: -17px;
+    }
+
+    .ant-tooltip-arrow-content {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

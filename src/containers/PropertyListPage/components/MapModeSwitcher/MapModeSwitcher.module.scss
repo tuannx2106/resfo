@@ -1,0 +1,31 @@
+@import 'styles';
+
+.root {
+  position: fixed;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.25);
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--font-size-base);
+  border-radius: 3px;
+  z-index: 3;
+  display: flex;
+
+  @include mediaquery-pc() {
+    display: none;
+  }
+
+  button {
+    border: 0;
+    background-color: var(--cl-blue-3);
+    color: var(--cl-blue-2);
+    line-height: 50px;
+    padding: 0 8px;
+    text-align: center;
+    width: 105px;
+  }
+
+  svg {
+    margin-right: 4px;
+  }
+}

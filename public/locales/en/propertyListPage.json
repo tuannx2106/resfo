@@ -1,0 +1,20 @@
+{
+  "map": {
+    "draw": "Draw",
+    "mapMode": "Map",
+    "street": "Street",
+    "satellite": "Satellite",
+    "cancel": "Cancel",
+    "apply": "Apply",
+    "removeBoundary": "Remove Boundary",
+    "drawAShapeAround": "Draw a shape around the region(s) you would like to live in.",
+    "showingResult": "Showing {{result}} of {{total}} results in this area"
+  },
+  "sort": {
+    "label": "Sort by",
+    "postDate": "Post date",
+    "updateDate": "Update date",
+    "paidListing": "Paid listing",
+    "mostViewListing": "Most view listing"
+  }
+}

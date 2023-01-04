@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'variables.global';
+@import 'styles';
+
+html {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-regular);
+  font-family: var(--font-family-base);
+  color: var(--cl-gray-11);
+}
+
+.body {
+  line-height: 1.5;
+
+  /* --------------------------- antd radio button --------------------------- */
+
+  .ant-radio-group-large .ant-radio-button-wrapper {
+    padding-top: var(--space-1);
+    padding-bottom: var(--space-1);
+    height: 48px;
+    border-color: rgb(167, 166, 171);
+    border-left-color: rgb(167, 166, 171);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-semi-bold);
+    transition: all 0.18s ease-in-out;
+  }
+
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    border-color: var(--cl-primary);
+  }
+
+  /* --------------------------- antd checkbox --------------------------- */
+
+  .ant-checkbox .ant-checkbox-inner {
+    border-radius: var(--rounded);
+  }
+
+  /* --------------------------- antd select --------------------------- */
+}

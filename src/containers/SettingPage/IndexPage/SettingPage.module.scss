@@ -1,0 +1,75 @@
+@import 'styles';
+
+.main {
+  min-height: 540px;
+  background-color: var(--cl-gray-2);
+}
+
+.mainContent {
+  padding: calc(2 * var(--space-4)) var(--space-4);
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+h1.title:global(.ant-typography) {
+  font-size: var(--font-size-extra-xl);
+  margin-bottom: var(--space-6);
+
+  @include mediaquery-extra-tb {
+    font-size: var(--font-size-extra-xxl);
+  }
+}
+
+.settingLink {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  background: var(--cl-white);
+  padding: calc(8 * var(--space-1)) calc(5 * var(--space-1));
+  border: 1px solid var(--cl-gray-5);
+  margin-bottom: var(--space-3);
+  cursor: pointer;
+
+  @include mediaquery-extra-tb {
+    padding: calc(10 * var(--space-1)) calc(5 * var(--space-1));
+  }
+
+  :global {
+    .anticon svg {
+      font-size: var(--font-size-xxl);
+      color: var(--cl-primary);
+    }
+  }
+}
+
+.settingLinkBody {
+  @extend %flex-center-vertical;
+  gap: var(--space-6);
+}
+
+.settingLinkMedia {
+  min-width: 44px;
+}
+
+.settingLinkText {
+  color: var(--cl-gray-11);
+  font-size: var(--font-size-md);
+}
+
+.settingLinkTitle,
+.settingLinkLabel {
+  margin-bottom: 0;
+}
+
+.settingLinkTitle {
+  font-weight: var(--font-bold);
+}
+
+.settingLinkLabel {
+  font-weight: var(--font-regular);
+  display: none;
+
+  @include mediaquery-tb {
+    display: block;
+  }
+}

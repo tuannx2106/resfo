@@ -1,0 +1,26 @@
+{
+  "mainTitle": "Saved Homes",
+  "remove": "Remove",
+  "cancel": "Cancel",
+  "apply": "Apply",
+  "removeModal": {
+    "offMarket": "Off-market and Recently Sold",
+    "all": "All"
+  },
+  "filter": {
+    "forSave": "For save",
+    "pending": "Pending & Contingent",
+    "offMarket": "Off-market"
+  },
+  "sort": {
+    "dateAdded": "Date added",
+    "status": "Status",
+    "price": "Price",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "homeSize": "Home size (sq. ft.)",
+    "lotSize": "Lot size (sq. ft.)",
+    "showAll": "Show All",
+    "showSome": "Show Some"
+  }
+}

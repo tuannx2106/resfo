@@ -1,0 +1,122 @@
+@import 'styles';
+
+.settingItem {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4) 0;
+
+  @include mediaquery-tb {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  :global {
+    .settingItemAction {
+      display: flex;
+      align-items: center;
+      gap: var(--space-4);
+    }
+
+    .settingItemActionValue,
+    .settingItemActionLink {
+      font-size: var(--font-size-md);
+      padding: 0;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .settingItemActionValue {
+      margin: 0;
+    }
+
+    .settingItemActionLink {
+      font-weight: var(--font-semi-bold);
+
+      &:hover {
+        color: var(--cl-blue-2);
+      }
+    }
+
+    .settingItemActionButton {
+      min-width: 178px;
+      height: 44px;
+      color: var(--cl-primary);
+      font-size: var(--font-size-md);
+      font-weight: var(--font-bold);
+    }
+  }
+
+  /* ------------------------ uploader ---------------------------- */
+  :global {
+    .setting-upload-avatar {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    .ant-upload-list-picture .ant-upload-list-item,
+    .ant-upload-list-picture-card .ant-upload-list-item {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      width: 64px;
+      height: 64px;
+      border-radius: var(--rounded-circle);
+      overflow: hidden;
+    }
+
+    .ant-upload-list-picture .ant-upload-list-item-thumbnail,
+    .ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+    .ant-upload-list-picture .ant-upload-list-item-thumbnail img,
+    .ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+      pointer-events: none;
+      width: 64px;
+      height: 64px;
+    }
+
+    .ant-upload-list-picture .ant-upload-list-item-name,
+    .ant-upload-list-picture .ant-upload-list-item-card-actions {
+      display: none;
+    }
+
+    .ant-upload {
+      color: var(--cl-primary);
+      font-weight: var(--font-semi-bold);
+      margin-left: var(--space-2);
+      font-size: var(--font-size-md);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--cl-blue-2);
+      }
+    }
+  }
+}
+
+.settingItem + .settingItem {
+  border-top: 1px solid var(--cl-blue-5);
+}
+
+.settingItemText {
+  margin-bottom: var(--space-2);
+
+  @include mediaquery-tb {
+    margin-bottom: 0;
+    padding-right: var(--space-3);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.settingItemTitle {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-bold);
+}
+
+.settingItemLabel {
+  color: var(--cl-gray-6);
+}

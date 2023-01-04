@@ -1,0 +1,47 @@
+@mixin mediaquery-mb() {
+  @media only screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-tb() {
+  @media only screen and (min-width: 638px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-tb-base() {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-extra-tb() {
+  @media only screen and (min-width: 800px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-pc() {
+  @media only screen and (min-width: 1007px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-pc-lg() {
+  @media only screen and (min-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-only-mb() {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaquery-only-tablet() {
+  @media only screen and (min-width: 800px) and (max-width: 1007px) {
+    @content;
+  }
+}

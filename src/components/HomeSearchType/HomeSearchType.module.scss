@@ -1,0 +1,26 @@
+.searchButton {
+  .circle {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: var(--space-1);
+  }
+
+  span:last-child {
+    vertical-align: middle;
+  }
+
+  &.sale .circle {
+    background-color: var(--cl-red-1);
+  }
+
+  &.rent .circle {
+    background-color: var(--cl-purple-1);
+  }
+
+  &.sold .circle {
+    background-color: var(--cl-yellow-1);
+  }
+}

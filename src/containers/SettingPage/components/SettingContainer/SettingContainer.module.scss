@@ -1,0 +1,10 @@
+.root {
+  background-color: var(--cl-gray-2);
+}
+
+.settingContainer {
+  padding: calc(2 * var(--space-4)) var(--space-4);
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}

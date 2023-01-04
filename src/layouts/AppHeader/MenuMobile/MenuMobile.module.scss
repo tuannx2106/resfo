@@ -1,0 +1,126 @@
+@import 'styles';
+
+.megaMenuMb {
+  background-color: var(--cl-white);
+  border-top: 1px solid var(--cl-gray-bd-1);
+  margin-bottom: 0;
+
+  > ul {
+    height: calc(var(--full-view-height) - var(--header-height-mini) - 1px);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 0;
+
+    > li {
+      border-bottom: 1px solid var(--cl-gray-bd-1);
+
+      &.active {
+        .megaMenuItemPanel {
+          display: block;
+        }
+      }
+
+      .megaMenuItemPanel {
+        display: none;
+        padding: 0 30px;
+        border-top: 1px solid var(--cl-gray-bd-1);
+        background-color: var(--cl-gray-14);
+
+        h6 {
+          font-weight: var(--font-semi-bold);
+          font-size: var(--font-size-base);
+          color: var(--cl-gray-11);
+          line-height: 40px;
+          margin-bottom: 0;
+          margin-top: 20px;
+        }
+
+        ul {
+          li {
+            line-height: 40px;
+
+            a {
+              font-size: var(--font-size-sm);
+              color: var(--cl-blue-1);
+
+              &:hover {
+                text-decoration: underline;
+                color: var(--cl-gray-11);
+              }
+            }
+          }
+        }
+      }
+
+      .megaMenuItem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        :global {
+          .ant-btn {
+            padding: 0;
+          }
+        }
+
+        a {
+          width: 100%;
+          padding: 15px;
+          color: var(--cl-gray-11);
+
+          &:hover {
+            color: var(--cl-blue-1);
+          }
+        }
+
+        span {
+          height: 28px;
+          border-left: 1px solid var(--cl-gray-bd-1);
+          @extend %flex-center-vertical;
+
+          svg {
+            width: 66px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.locale {
+  @extend %flex-center-vertical;
+  justify-content: space-between;
+  padding: 10px 15px;
+
+  @include mediaquery-mb() {
+    display: none;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.localeIcon {
+  display: flex;
+  gap: var(--space-4);
+
+  .icon {
+    cursor: pointer;
+    position: relative;
+    height: 32px;
+
+    &.active .iconCheck {
+      display: block;
+    }
+  }
+
+  .iconCheck {
+    color: var(--cl-green-1);
+    position: absolute;
+    top: -5px;
+    right: -2px;
+    display: none;
+  }
+}

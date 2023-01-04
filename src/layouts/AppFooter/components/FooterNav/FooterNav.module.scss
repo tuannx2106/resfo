@@ -1,0 +1,32 @@
+@import 'styles';
+
+.footerNav {
+  padding: var(--space-6);
+
+  @include mediaquery-mb() {
+    column-count: 2;
+  }
+
+  @include mediaquery-extra-tb() {
+    column-count: 1;
+    text-align: center;
+  }
+
+  li {
+    padding: calc(4 * var(--space-1));
+
+    @include mediaquery-extra-tb() {
+      display: inline-block;
+    }
+  }
+
+  a {
+    color: var(--cl-gray-13);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-regular);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

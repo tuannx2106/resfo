@@ -1,0 +1,24 @@
+.priceMenus {
+  color: var(--cl-gray-11);
+
+  :global {
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+}
+
+.title {
+  margin-bottom: var(--space-3);
+  text-transform: uppercase;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-semi-bold);
+}
+
+.priceMenus.isDropdown {
+  padding: var(--space-4);
+
+  .title {
+    display: none;
+  }
+}

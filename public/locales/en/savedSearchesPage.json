@@ -1,0 +1,28 @@
+{
+  "title": "Saved searches",
+  "newSearch": "New Search",
+  "subscriptionsAre": "Subscriptions are",
+  "modalSavedSearch": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "update": "Update",
+    "cancel": "Cancel",
+    "editTitle": "Edit saved search",
+    "deleteTitle": "Are you sure?",
+    "deleteBodyTitle": "Deleting your search removes it from your web and app experience.",
+    "deleteBodySubTitle": "Any email subscriptions and app notifications related to this search will also be removed.",
+    "form": {
+      "name": "Name",
+      "subscription": "Subscription",
+      "instant": "Instant",
+      "daily": "Daily"
+    }
+  },
+  "empty": {
+    "title": "Get updates on your saved searches",
+    "subTitle": "Saving your searches saves you time and we will let you know whenever a match comes on the market.",
+    "takeVeelaWithYou": "Take Veela with you!",
+    "getAppSubscription": "Our app opens up all sorts of possibilities, including self-touring any Veela-owned home.",
+    "getTheVeelaApp": "Get the Veela app"
+  }
+}
